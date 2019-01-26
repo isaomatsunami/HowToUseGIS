@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <HISTORY saga-version="2.3.2">
+    <MODULE library="statistics_kriging" id="0" name="Ordinary Kriging">
+      <OPTION type="table_field" id="FIELD" name="Attribute" index="6">Data11</OPTION>
+      <OPTION type="choice" id="TQUALITY" name="Type of Quality Measure" index="0">standard deviation</OPTION>
+      <OPTION type="boolean" id="LOG" name="Logarithmic Transformation">FALSE</OPTION>
+      <OPTION type="boolean" id="BLOCK" name="Block Kriging">FALSE</OPTION>
+      <OPTION type="choice" id="TARGET_DEFINITION" name="Target Grid System" index="0">user defined</OPTION>
+      <OPTION type="double" id="TARGET_USER_SIZE" name="Cellsize">660.000000</OPTION>
+      <OPTION type="double" id="TARGET_USER_XMIN" name="Left">-50160.000000</OPTION>
+      <OPTION type="double" id="TARGET_USER_XMAX" name="Right">108900.000000</OPTION>
+      <OPTION type="double" id="TARGET_USER_YMIN" name="Bottom">85800.000000</OPTION>
+      <OPTION type="double" id="TARGET_USER_YMAX" name="Top">218460.000000</OPTION>
+      <OPTION type="choice" id="TARGET_USER_FITS" name="Fit" index="0">nodes</OPTION>
+      <OPTION type="boolean" id="VARIANCE_CREATE" name="Quality Measure">FALSE</OPTION>
+      <OPTION type="choice" id="SEARCH_RANGE" name="Search Range" index="0">local</OPTION>
+      <OPTION type="double" id="SEARCH_RADIUS" name="Maximum Search Distance">10000.000000</OPTION>
+      <OPTION type="choice" id="SEARCH_POINTS_ALL" name="Number of Points" index="0">maximum number of nearest points</OPTION>
+      <OPTION type="integer" id="SEARCH_POINTS_MIN" name="Minimum">16</OPTION>
+      <OPTION type="integer" id="SEARCH_POINTS_MAX" name="Maximum">20</OPTION>
+      <OPTION type="choice" id="SEARCH_DIRECTION" name="Direction" index="0">all directions</OPTION>
+      <INPUT type="shapes" id="POINTS" name="Points">
+        <FILE>E:\Fukushima\Radiation_2451_UTF8.shp</FILE>
+      </INPUT>
+      <OUTPUT type="grid" id="PREDICTION" name="Prediction">Radiation_2451_UTF8.Data11 [Ordinary Kriging]</OUTPUT>
+    </MODULE>
+  </HISTORY>
+  <SOURCE>
+    <FILE>E:\Fukushima\Radiation_2451_UTF8.Data11 [Ordinary Kriging].sgrd</FILE>
+    <DATABASE></DATABASE>
+    <PROJECTION>
+      <OGC_WKT>PROJCS["JGD2000_Japan_Plane_Rectangular_CS_IX",GEOGCS["GCS_JGD_2000",DATUM["D_JGD_2000",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",36],PARAMETER["central_meridian",139.8333333333333],PARAMETER["scale_factor",0.9999],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["Meter",1]]</OGC_WKT>
+      <PROJ4>+proj=tmerc +a=6378137.000000 +b=6356752.314140 +lat_0=36 +lon_0=139.8333333333333 +k_0=0.9999 +x_0=0 +y_0=0 +no_defs</PROJ4>
+      <EPSG>-1</EPSG>
+    </PROJECTION>
+  </SOURCE>
+  <DESCRIPTION></DESCRIPTION>
+</SAGA_METADATA>
